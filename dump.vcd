@@ -1,0 +1,88 @@
+$date
+	Thu Jul 04 17:24:21 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mainDec_tb $end
+$var wire 1 ! ResultSrc $end
+$var wire 1 " RegWrite $end
+$var wire 1 # PCSrc $end
+$var wire 1 $ MemWrite $end
+$var wire 2 % ImmSrc [1:0] $end
+$var wire 1 & Branch $end
+$var wire 1 ' ALUSrc $end
+$var wire 2 ( ALUOp [1:0] $end
+$var reg 7 ) op [6:0] $end
+$var reg 1 * zero $end
+$scope module dut $end
+$var wire 1 # PCSrc $end
+$var wire 7 + op [6:0] $end
+$var wire 1 * zero $end
+$var wire 1 ! ResultSrc $end
+$var wire 1 " RegWrite $end
+$var wire 1 $ MemWrite $end
+$var wire 2 , ImmSrc [1:0] $end
+$var wire 1 & Branch $end
+$var wire 1 ' ALUSrc $end
+$var wire 2 - ALUOp [1:0] $end
+$var reg 9 . control_signals [8:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b100101000 .
+b0 -
+b0 ,
+b11 +
+0*
+b11 )
+b0 (
+1'
+0&
+b0 %
+0$
+0#
+1"
+1!
+$end
+#10
+0"
+b1 %
+b1 ,
+1$
+x!
+b111x000 .
+b100011 )
+b100011 +
+#20
+1"
+bx %
+bx ,
+0'
+0$
+0!
+b10 (
+b10 -
+b1xx000010 .
+b110011 )
+b110011 +
+#30
+0"
+b10 %
+b10 ,
+x!
+1&
+b1 (
+b1 -
+b1000x101 .
+b1100011 )
+b1100011 +
+#40
