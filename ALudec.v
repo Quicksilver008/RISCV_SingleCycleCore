@@ -1,11 +1,11 @@
-module ALUdecoder(ALUOp,funct3,op5,funct7,ALUControl);
-    input op5,funct7;
+module ALUdecoder(ALUOp,funct3,op,funct7,ALUControl);
+    input [6:0] op,funct7;
     input [2:0]funct3;
     input [1:0]ALUOp;
     output [2:0]ALUControl;
     wire concatination;
 
-    assign concatination={op5,funct7};
+    assign concatination={op[5],funct7[5]};
     
     assign ALUControl=(ALUOp==2'b00)?3'b000:
                       (ALUOp==2'b01)?3'b001:
