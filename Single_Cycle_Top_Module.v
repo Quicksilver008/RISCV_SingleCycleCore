@@ -4,10 +4,10 @@
 `include "Register_File.v"
 `include "Sign_Extend.v"
 `include "ALU.v"
-`include "Control_Unit_Top.v"
-`include "Data_Memory.v"
+`include "Control_Unit_top.v"
+`include "dataMemory.v"
 `include "PC_Adder.v"
-`include "Mux.v"
+`include "mux2to1.v"
 
 module Single_Cycle_Top(clk,rst);
 
@@ -73,7 +73,7 @@ module Single_Cycle_Top(clk,rst);
             .Negative()
     );
 
-    Control_Unit_Top Control_Unit_Top(
+    Control_Unit_top Control_Unit_Top(
                             .Op(RD_Instr[6:0]),
                             .RegWrite(RegWrite),
                             .ImmSrc(ImmSrc),
