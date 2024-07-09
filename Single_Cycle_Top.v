@@ -73,7 +73,7 @@ module Single_Cycle_Top(clk,rst);
             .Negative()
     );
 
-    Control_Unit_top Control_Unit_Top(
+    Control_Unit_Top Control_Unit_Top(
                             .Op(RD_Instr[6:0]),
                             .RegWrite(RegWrite),
                             .ImmSrc(ImmSrc),

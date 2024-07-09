@@ -24,7 +24,7 @@ module Control_Unit_Top(Op,zero,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,PCSrc,
                 .PCSrc(PCSrc)
     );
 
-    ALudec ALU_Decoder(
+    ALUdecoder ALU_Decoder(
                             .ALUOp(ALUOp),
                             .funct3(funct3),
                             .funct7(funct7),
