@@ -3,6 +3,7 @@
 
 module Control_Unit_Top(Op,zero,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,PCSrc,Branch,funct3,funct7,ALUControl);
 
+    input zero;
     input [6:0]Op,funct7;
     input [2:0]funct3;
     output RegWrite,ALUSrc,MemWrite,ResultSrc,Branch,PCSrc;
