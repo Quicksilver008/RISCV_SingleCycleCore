@@ -18,7 +18,7 @@ module Register_File(clk,rst,WE3,WD3,A1,A2,A3,RD1,RD2);
 
     initial begin
         Register[5] = 32'h00000005;
-        Register[6] = 32'h00000004;
+        Register[6] = 32'h00000000;
         
     end
 
